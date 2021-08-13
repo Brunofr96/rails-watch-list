@@ -35,12 +35,11 @@
 
 <ul>
 <div class="container">
+<div class="cards">
   <% @lists.each do |list| %>
-    <div class="card-product">
-      <img src="https://nofilmschool.com/sites/default/files/styles/article_wide/public/drama_genre_-_crash_.jpg?itok=HCURiYb2" />
-      <div class="card-product-infos">
-        <h2><%= link_to list.name, list_path(list) %></h2>
-      </div>
+    
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://nofilmschool.com/sites/default/files/styles/article_wide/public/drama_genre_-_crash_.jpg?itok=HCURiYb2)">
+      <%= link_to list.name, list_path(list) %>
     </div>
   <% end %>
 </div>
@@ -54,6 +53,7 @@
     <a href="#"><i class="fab fa-linkedin"></i></a>
   </div>
   <div class="footer-copyright">
-    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
   </div>
 </div>
+
+
